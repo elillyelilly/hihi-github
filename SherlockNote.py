@@ -9,7 +9,7 @@ import re
 #async def delmessage():
 #    deleted = await channel.purge(limit=2, check=is_me)
 #    await channel.send('Deleted {} message(s)'.format(len(deleted)))
-
+token = os.environ['DISCORD_BOT_TOKEN']
 # APIキーの指定
 apikey = "eedb415d2305d34fc77258806faa19c0"
 client = discord.Client()
@@ -255,5 +255,4 @@ async def on_message(message):
             m = "```No: " + str(updatetarget) + "\tch: " + updaterowch + "\t内容: " + updaterowmission + "\t登録時間:" + updaterowtime + "```"
             await message.channel.send(m)
 
-client.run('DISCORD_BOT_TOKEN')
-
+bot.run(token)
