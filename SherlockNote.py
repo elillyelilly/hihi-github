@@ -255,5 +255,5 @@ async def on_message(message):
             m = "```No: " + str(updatetarget) + "\tch: " + updaterowch + "\t内容: " + updaterowmission + "\t登録時間:" + updaterowtime + "```"
             await message.channel.send(m)
 
-client.run("NzM4NjI2OTc5MjcxNjcxODQw.XyOp-g.YnikMpRFSqR9hF2vIDdQFM9f0Xo")
+client.run('DISCORD_BOT_TOKEN')
 
